@@ -1,7 +1,8 @@
 # <b>Free Code Camp</b>
 <p>Repository for code written to attain Free Code Camp certification.</p>
 
-<p><b>Front End Development Certification</b> Progress:
+<p><b>Front End Development Certification</b></p>
+<p>Completed:
 <ul><li>HTML5 and CSS</li>
 <li>Responsive Design with Bootstrap</li>
 <li>jQuery</li>
