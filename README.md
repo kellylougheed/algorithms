@@ -9,12 +9,13 @@
 <li>Basic Front End Development Projects</li>
 <li>Basic Javascript</li>
 <li>Object Oriented and Functional Programming</li>
-<li>Basic Algorithms</li>
+<li>Basic Algorithm Scripting</li>
+<li>JSON APIs and Ajax</li>
 </ul></p>
 
 <p>Currently working on:
 <ul>
-<li>JSON APIs and Ajax</li>
 <li>Intermediate Front End Developer Projects</li>
+<li>Intermediate Algorithm Scripting</li>
 </ul></p>
 
