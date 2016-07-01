@@ -1,4 +1,5 @@
 function convertToRoman(num) {
+  num = Math.floor(num);
   var number = num.toString();
   var romanNumeral = "";
   // To convert the thousand's place
