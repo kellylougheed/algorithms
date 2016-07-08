@@ -1,11 +1,11 @@
 function steamrollArray(arr) {
   var newArray = [];
-  function steamroller(x) {
-    if (Array.isArray(x) === false) {
-      newArray.push(x);
-    } else if (Array.isArray(x) === true) {
-      for (var j = 0; j < x.length; j++) {
-        steamroller(x[j]);
+  function steamroller(val) {
+    if (Array.isArray(val) === false) {
+      newArray.push(val);
+    } else if (Array.isArray(val) === true) {
+      for (var j = 0; j < val.length; j++) {
+        steamroller(val[j]);
       }
     }
   }
