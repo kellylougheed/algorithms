@@ -1,6 +1,6 @@
 function confirmEnding(str, target) {
-  var end = str.substr(-target.length);
-  if (end == target) {
+  var ending = str.substr(-target.length);
+  if (ending == target) {
     return true;
   } else {
     return false;

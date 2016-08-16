@@ -1,5 +1,5 @@
 function rot13(str) {
-  var answer = "";
+  var translation = "";
   for (var i = 0; i < str.length; i++) {
     var char = str.charCodeAt(i);
     if (char >= 65 && char <= 90) {
@@ -9,8 +9,8 @@ function rot13(str) {
         char = char - 13;
       }
     }
-    answer += String.fromCharCode(char);
+    translation += String.fromCharCode(char);
   }
-  return answer;
+  return translation;
 }
 rot13("SERR PBQR PNZC");

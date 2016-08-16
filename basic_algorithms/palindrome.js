@@ -1,33 +1,33 @@
 function palindrome(str) {
-  // To make string lower case and alphanumeric only
+  // Make string lower case and alphanumeric only
   str = str.toLowerCase();
   str = str.replace(/[^a-z0-9+]+/gi, "");
   
-  // To determine the length of half the string
+  // Determine the length of half the string
   var searchLength = Math.floor(str.length / 2);
   
-  // To take the first half of the string and separate it
-  var array = [""];
+  // Take the first half of the string and separate it
+  var firstHalfArray = [""];
   for (var i = 1; i <= searchLength; i++) {
-    array.push(str.charAt(i - 1));
+    firstHalfArray.push(str.charAt(i - 1));
   }
-  var halfString = array.join("");
+  var firstHalfString = array.join("");
   
-  // To separate the second half of the string and put it backwards into an array, then a string
-  var array2 = [""];
+  // Separate the second half of the string and put it backwards into an array, then a string
+  var secondHalfArray = [""];
   if (str.length % 2 !== 0) {
     for (var j = str.length; j > searchLength + 1; j--) {
-      array2.push(str.charAt(j - 1));
+      secondHalfArray.push(str.charAt(j - 1));
     }
   } else {
     for (var k = str.length; k > searchLength; k--) {
-      array2.push(str.charAt(k - 1));
+      secondHalfArray.push(str.charAt(k - 1));
     }
   }
-  var halfString2 = array2.join("");
+  var secondHalfString = secondHalfArray.join("");
   
   // To see if the two string halves are the same
-  if (halfString == halfString2) {
+  if (firstHalfString == secondHalfString) {
     return true;
   } else {
     return false;

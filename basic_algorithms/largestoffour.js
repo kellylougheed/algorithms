@@ -1,5 +1,4 @@
 function largestOfFour(arr) {
-  // You can do this!
   for (var i = 0; i < arr.length; i++) {
     var thisArray = arr[i];
     var biggest = 0;
