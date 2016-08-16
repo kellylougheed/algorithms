@@ -3,40 +3,9 @@ function binaryAgent(str) {
   var letters = str.split(" ");
   for (var i = 0; i < letters.length; i++) {
     var currentLetter = letters[i];
-    var charCode = 0;
-    for (var j = 0; j < 8; j++) {
-      if (currentLetter.charCodeAt(j) == 49) { // If the current character is 1
-        switch(j) {
-          case 0:
-            charCode += 1;
-            break;
-          case 1:
-            charCode += 2;
-            break;
-          case 2:
-            charCode += 4;
-            break;
-          case 3:
-            charCode += 8;
-            break;
-          case 4:
-            charCode += 16;
-            break;
-          case 5:
-            charCode += 32;
-            break;
-          case 6:
-            charCode += 64;
-            break;
-          case 7:
-            charCode += 128;
-            break;
-        }
-      }
-    }
-    currentLetter = String.fromCharCode(charCode);
+    var currentChar = parseInt(currentLetter, 2);
+    currentLetter = String.fromCharCode(currentChar);
     translation += currentLetter;
-    charCode = 0;
   }
   return translation;
 }
