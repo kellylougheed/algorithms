@@ -1,3 +1,12 @@
+function isItDivisibleByAll(arr, SCM) {
+  for (var j = 0; j < arr.length; j++) {
+      if (SCM % arr[j] !== 0) {
+        return false;
+      }
+    }
+    return true;
+}
+
 function smallestCommons(arr) {
   // Sort from smallest to biggest
   arr.sort(function(a, b) {
@@ -7,23 +16,21 @@ function smallestCommons(arr) {
   var range = [];
   var smaller = arr[0];
   var bigger = arr[1];
-  for (var i = smaller; i <= bigger; i++) {
+  for (var i = bigger; i >= smaller; i--) {
     range.push(i);
   }
   // 
-  var SCM = 1;
-  var foundSCM = false;
-  for (var j = range.length - 1; j >= 0; j--) {
-    if (foundSCM === false) {
-      SCM *= range[j];
-    }
-    for (var k = 0; k < range.length; k++) {
-      if (SCM % range[k] !== 0) {
-        foundSCM = false;
-        break;
-      } else {
-        foundSCM = true;
-      }
+  var SCM;
+  var test = false;
+  var trial = 1;
+  
+  while (trial < range.length) {
+    SCM = bigger*range[1]*trial;
+    test = isItDivisibleByAll(range, SCM);
+    if (test === true) {
+      break;
+    } else if (test === false) {
+      trial++;
     }
   }
   return SCM;
