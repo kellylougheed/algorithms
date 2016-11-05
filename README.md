@@ -4,5 +4,4 @@
 <p><b>Contents</b></p>
 <ul><li>Basic Algorithms</li>
 <li>Intermediate Algorithms</li>
-<li>Advanced Algorithms</li>
 </ul></p>
