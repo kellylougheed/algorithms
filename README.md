@@ -1,3 +1,3 @@
-# Algorithms
+# Free Code Camp
 
-Repository for freeCodeCamp algorithm solutions in JavaScript.
+FreeCodeCamp basic & intermediate algorithm solutions in JavaScript.
